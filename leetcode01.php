@@ -7,8 +7,8 @@ function twoSum($nums, $target)
     for ($x = 0; $x < count($nums) - 1; $x++) {
         for ($y = $x + 1; $y < count($nums); $y++) {
             if ($nums[$x] + $nums[$y] == $target) {
-                $twoNums[] = $x;
-                $twoNums[] = $y;
+                $twoNums[0] = $x;
+                $twoNums[1] = $y;
                 return $twoNums;
             }
         }
